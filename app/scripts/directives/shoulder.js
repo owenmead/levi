@@ -13,7 +13,18 @@ angular.module('leviApp')
       restrict: 'E',
       scope: {},
       link: function postLink(scope, element, attrs) {
-        //element.text('this is the shoulder directive');
+
+        scope.showSwatchs = false;
+
+        scope.openSwatch = function() {
+            scope.showSwatchs = true;
+        }
+        scope.closeSwatchs = function() {
+            scope.showSwatchs = false;
+        }
+        scope.selectSwatch = function(swatch) {
+            console.log(swatch);
+        };
       }
     };
   });
