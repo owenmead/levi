@@ -3,6 +3,7 @@
 		position: absolute;
 		top: 100px;
 		right: 170px;
+		z-index: 2;
 	}
 
 	#shoulder .swatches {
@@ -10,7 +11,8 @@
 		right: 0px;
 		width: 20px;
 		height: 20px;
-		background-color: #F00;
+		/* background-color: #F00; */
+		z-index: 4;
 	}
 
 	#shoulder .swatches > div {
@@ -49,17 +51,26 @@
 	#shoulder-closer {
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
-		z-index: 10;
+		z-index: 1;
+	}
+	#shoulderOption {
+		position: absolute;
+		top: -47px;
+		left: -63px;
+		z-index: 1;
 	}
 </style>
 
 <div id="shoulder">
 	<div class="swatches" ng-click="openSwatch()">
-		<div ng-show="showSwatchs" ng-click="selectSwatch('first')" class="first"></div>
-		<div ng-show="showSwatchs" ng-click="selectSwatch('second')" class="second"></div>
-		<div ng-show="showSwatchs" ng-click="selectSwatch('third')" class="third"></div>
-		<div ng-show="showSwatchs" ng-click="selectSwatch('fourth')" class="fourth"></div>
-		<div ng-show="showSwatchs" ng-click="selectSwatch('fifth')" class="fifth"></div>
+		<div ng-show="showSwatchs" ng-click="selectSwatch('blue')" class="first"></div>
+		<div ng-show="showSwatchs" ng-click="selectSwatch('green')" class="second"></div>
+		<div ng-show="showSwatchs" ng-click="selectSwatch('yellow')" class="third"></div>
+		<div ng-show="showSwatchs" ng-click="selectSwatch('purple')" class="fourth"></div>
+		<div ng-show="showSwatchs" ng-click="selectSwatch('red')" class="fifth"></div>
+	</div>
+	<div id="shoulderOption">
+		<img ng-src="images/shoulder/{{showingOption}}.png" />
 	</div>
 </div>
 <div ng-show="showSwatchs" ng-click="closeSwatchs()" id="shoulder-closer"></div>
