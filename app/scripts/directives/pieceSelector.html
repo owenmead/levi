@@ -1,17 +1,17 @@
 <style>
-	#piece {
+	.piece {
 		position: absolute;
 		top: 0px; left: 0px; right: 0px; bottom: 0px;
 	}
 
-	#piece #swatches {
+	.piece .swatches {
 		position: absolute;
 		left: 350px;
 		top: 52px;
 		z-index: 10;
 	}
 
-	#piece #swatches > div {
+	.piece .swatches > div {
 		height: 30px;
 		width: 30px;
 		border-radius: 30px;
@@ -23,14 +23,14 @@
 	.fourth { background-color: #F0F; }
 	.fifth  { background-color: #F00; }
 
-	#swatchCloser {
+	.swatchCloser {
 		position: absolute;
 		top: 0; left: 0; right: 0; bottom: 0;
 
 
 		z-index: 8;
 	}
-	#swatchOpener {
+	.swatchOpener {
 		position: absolute;
 		top: 50px;
 		left: 215px;
@@ -39,7 +39,7 @@
 
 		z-index: 5;
 	}
-	#pieceImg {
+	.pieceImg {
 		background-image: url(images/shoulder/{{pieceColour}}.png);
 		position: absolute;
 
@@ -50,18 +50,17 @@
 		height: 276px;
 		z-index: 2;
 	}
-
 </style>
 
-<div id="piece">
-	<div id="swatches" ng-show="showSwatchs">
+<div class="piece">
+	<div class="swatches" ng-show="showSwatchs">
 		<div ng-click="selectSwatch('blue')" class="first"></div>
 		<div ng-click="selectSwatch('green')" class="second"></div>
 		<div ng-click="selectSwatch('yellow')" class="third"></div>
 		<div ng-click="selectSwatch('purple')" class="fourth"></div>
 		<div ng-click="selectSwatch('red')" class="fifth"></div>
 	</div>
-	<div id="swatchOpener" ng-click="openSwatch()"></div>
-	<div id="swatchCloser" ng-show="showSwatchs" ng-click="closeSwatchs()"></div>
-	<div id="pieceImg"></div>
+	<div class="swatchOpener" ng-click="openSwatch()"></div>
+	<div class="swatchCloser" ng-show="showSwatchs" ng-click="closeSwatchs()"></div>
+	<div class="pieceImg"></div>
 </div>
