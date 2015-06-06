@@ -1,15 +1,9 @@
 'use strict';
 
-/**
- * @ngdoc directive
- * @name leviApp.directive:shoulder
- * @description
- * # shoulder
- */
 angular.module('leviApp')
-  .directive('shoulder', function () {
+  .directive('pieceSelector', function () {
     return {
-      templateUrl: 'views/shoulder.html',
+      templateUrl: 'scripts/directives/pieceSelector.html',
       restrict: 'E',
       scope: {},
       link: function postLink(scope, element, attrs) {
@@ -26,7 +20,7 @@ angular.module('leviApp')
             if (swatch === 'blue') {
                 swatch = 'none';
             }
-            scope.shoulderColour = swatch;
+            scope.pieceColour = swatch;
         };
 
         scope.selectSwatch('blue');

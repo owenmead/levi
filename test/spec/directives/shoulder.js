@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: shoulder', function () {
+describe('Directive: piece', function () {
 
   // load the directive's module
   beforeEach(module('leviApp'));
@@ -13,8 +13,8 @@ describe('Directive: shoulder', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<shoulder></shoulder>');
+    element = angular.element('<piece-selector></piece-selector>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the shoulder directive');
+    expect(element.text()).toBe('this is the piece selector directive');
   }));
 });
