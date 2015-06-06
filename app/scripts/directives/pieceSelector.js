@@ -8,7 +8,7 @@ angular.module('leviApp')
       scope: {},
       link: function postLink(scope, element, attrs) {
 
-        scope.showSwatchs = true;
+        scope.showSwatchs = false;
 
         scope.openSwatch = function() {
             scope.showSwatchs = true;
@@ -22,7 +22,6 @@ angular.module('leviApp')
             }
             scope.pieceColour = swatch;
         };
-
         scope.selectSwatch('blue');
       }
     };
