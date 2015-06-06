@@ -14,21 +14,22 @@ angular.module('leviApp')
       scope: {},
       link: function postLink(scope, element, attrs) {
 
-        scope.showSwatchs = false;
-        scope.showingOption = 'none';
+        scope.showSwatchs = true;
 
         scope.openSwatch = function() {
             scope.showSwatchs = true;
-        }
+        };
         scope.closeSwatchs = function() {
             scope.showSwatchs = false;
-        }
+        };
         scope.selectSwatch = function(swatch) {
             if (swatch === 'blue') {
                 swatch = 'none';
             }
-            scope.showingOption = swatch;
+            scope.shoulderColour = swatch;
         };
+
+        scope.selectSwatch('blue');
       }
     };
   });
