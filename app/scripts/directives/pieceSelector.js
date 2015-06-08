@@ -7,6 +7,7 @@ angular.module('leviApp')
       this.name = $scope.name;
       this.imgDir = $scope.imgDir;
       this.options = $scope.options();
+      this.positioning = $scope.positioning();
       this._option_keys = Object.keys(this.options);
 
       this.showSwatchs = false;
@@ -28,7 +29,8 @@ angular.module('leviApp')
       scope: {
         imgDir: '@',
         name: '@',
-        options: '&'
+        options: '&',
+        positioning: '&'
       },
       controller: controller,
       controllerAs: 'ctrl'
