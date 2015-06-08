@@ -19,6 +19,6 @@ angular.module('leviApp')
           pieceImg: { top: '53px', left: '207px', width: '144px', height: '276px' }
         }
       }
-    }
+    };
     $scope.data = data;
   });

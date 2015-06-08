@@ -8,11 +8,11 @@ angular.module('leviApp')
       this.imgDir = $scope.imgDir;
       this.options = $scope.options();
       this.positioning = $scope.positioning();
-      this._option_keys = Object.keys(this.options);
+      this.optionKeys = Object.keys(this.options);
 
       this.showSwatchs = false;
-      this.selectOption(this.options[this._option_keys[0]]);
-    }
+      this.selectOption(this.options[this.optionKeys[0]]);
+    };
     controller.prototype.openSwatch = function() {
         this.showSwatchs = true;
     };
