@@ -4,7 +4,8 @@ angular.module('leviApp')
   .controller('MainCtrl', function ($scope) {
     var data = {
       shoulder: {
-        imgDir: "images/shoulder/",
+        name: 'shoulder',
+        imgDir: 'images/shoulder/',
         options: {
           green:  {img:'green.png',  style: 'background-color: #0F0;'},
           blue:   {img:'none.png',   style: 'background-color: #00F;'},

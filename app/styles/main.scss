@@ -8,3 +8,32 @@ div.container {
   border: 1px solid #DDD;
   position: relative;
 }
+
+
+.piece {
+	position: absolute;
+	top: 0px; left: 0px; right: 0px; bottom: 0px;
+}
+.piece .swatches {
+	position: absolute;
+	z-index: 10;
+}
+.piece .swatches > div {
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+	margin-bottom: 5px;
+}
+.swatchCloser {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 8;
+}
+.swatchOpener {
+	position: absolute;
+	z-index: 5;
+}
+.pieceImg {
+	position: absolute;
+	z-index: 2;
+}

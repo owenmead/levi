@@ -4,6 +4,7 @@ angular.module('leviApp')
   .directive('pieceSelector', function () {
 
     var controller = function($attrs, $scope) {
+      this.name = $scope.name;
       this.imgDir = $scope.imgDir;
       this.options = $scope.options();
       this._option_keys = Object.keys(this.options);
@@ -26,6 +27,7 @@ angular.module('leviApp')
       restrict: 'E',
       scope: {
         imgDir: '@',
+        name: '@',
         options: '&'
       },
       controller: controller,

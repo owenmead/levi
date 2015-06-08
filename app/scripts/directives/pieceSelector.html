@@ -1,39 +1,16 @@
 <style>
-	.piece {
-		position: absolute;
-		top: 0px; left: 0px; right: 0px; bottom: 0px;
-	}
 	.piece .swatches {
-		position: absolute;
 		left: 350px;
 		top: 52px;
-		z-index: 10;
-	}
-
-	.piece .swatches > div {
-		height: 30px;
-		width: 30px;
-		border-radius: 30px;
-		margin-bottom: 5px;
-	}
-	.swatchCloser {
-		position: absolute;
-		top: 0; left: 0; right: 0; bottom: 0;
-		z-index: 8;
 	}
 	.swatchOpener {
-		position: absolute;
-		z-index: 5;
-
 		top: 50px;
 		left: 215px;
 		height: 200px;
 		width: 133px;
 	}
-	.pieceImg {
+	.piece-{{ctrl.name}} .pieceImg {
 		background-image: url({{ctrl.imgDir}}{{ctrl.currentOption.img}});
-		position: absolute;
-		z-index: 2;
 
 		top: 53px;
 		left: 207px;
@@ -41,7 +18,7 @@
 		height: 276px;
 	}
 </style>
-<div class="piece">
+<div class="piece piece-{{ctrl.name}}">
 	<div class="swatches" ng-show="ctrl.showSwatchs">
 		<div
 			ng-repeat="option in ctrl.options"
