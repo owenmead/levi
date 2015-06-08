@@ -3,9 +3,13 @@
 angular.module('leviApp')
   .directive('pieceSelector', function () {
 
-    var controller = function($attrs) {
+    var controller = function($attrs, $scope) {
+      this.imgDir = $scope.imgDir;
+      this.options = $scope.options();
+      this._option_keys = Object.keys(this.options);
+
       this.showSwatchs = false;
-      this.selectSwatch('red');
+      this.selectOption(this.options[this._option_keys[0]]);
     }
     controller.prototype.openSwatch = function() {
         this.showSwatchs = true;
@@ -13,17 +17,17 @@ angular.module('leviApp')
     controller.prototype.closeSwatchs = function() {
         this.showSwatchs = false;
     };
-    controller.prototype.selectSwatch = function(swatch) {
-        if (swatch === 'blue') {
-            swatch = 'none';
-        }
-        this.pieceColour = swatch;
+    controller.prototype.selectOption = function(option) {
+        this.currentOption = option;
     };
 
     return {
       templateUrl: 'scripts/directives/pieceSelector.html',
       restrict: 'E',
-      scope: {},
+      scope: {
+        imgDir: '@',
+        options: '&'
+      },
       controller: controller,
       controllerAs: 'ctrl'
     };
