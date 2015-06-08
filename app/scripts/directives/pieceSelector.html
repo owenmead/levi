@@ -22,7 +22,7 @@
 	<div class="swatches" ng-show="ctrl.showSwatchs">
 		<div
 			ng-repeat="option in ctrl.options"
-			ng-click="ctrl.selectOption(option)" style="{{option.style}}"></div>
+			ng-click="ctrl.selectOption(option)" style="{{option.swatchStyle}}"></div>
 	</div>
 	<div class="swatchOpener" ng-click="ctrl.openSwatch()"></div>
 	<div class="swatchCloser" ng-show="ctrl.showSwatchs" ng-click="ctrl.closeSwatchs()"></div>
