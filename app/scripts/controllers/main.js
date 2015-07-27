@@ -7,7 +7,7 @@ angular.module('leviApp')
         name: 'base',
         imgDir: 'images/base/',
         options: {
-          black: {img:'align.png', swatchStyle: 'background: url(images/base/align.png) -143px -16px no-repeat;'},
+          black: {img:'black.png', swatchStyle: 'background: url(images/base/black.png) -143px -16px no-repeat;'},
           neon:  {img:'neon.png',  swatchStyle: 'background: url(images/base/neon.png)  -143px -16px no-repeat;'},
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/base/nude.png)  -143px -16px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/base/red.png)   -143px -16px no-repeat;'},
@@ -15,9 +15,9 @@ angular.module('leviApp')
           print: {img:'print.png', swatchStyle: 'background: url(images/base/print.png) -143px -16px no-repeat;'}
         },
         positioning: {
-          swatches:     { top: '62px', left: '324px' },
-          swatchOpener: { top: '61px', left: '58px',  width: '264px', height: '617px' },
-          pieceImg:     { top: '61px', left: '58px',  width: '264px', height: '617px' }
+          swatches:     { top: '272px', left: '324px' },
+          swatchOpener: { top: '61px',  left: '58px',  width: '264px', height: '617px' },
+          pieceImg:     { top: '61px',  left: '58px',  width: '264px', height: '617px' }
         }
       },
 
@@ -53,6 +53,23 @@ angular.module('leviApp')
           swatches:     { top: '146px', left: '324px' },
           swatchOpener: { top: '146px', left: '82px', width: '168px', height: '112px' },
           pieceImg:     { top: '146px', left: '82px', width: '189px', height: '112px' }
+        }
+      },
+
+      bottomContrast: {
+        name: 'bottomContrast',
+        imgDir: 'images/bottomContrast/',
+        options: {
+          black: {img:'black.png', swatchStyle: 'background: url(images/bottomContrast/black.png) -27px -13px no-repeat;'},
+          neon:  {img:'neon.png',  swatchStyle: 'background: url(images/bottomContrast/neon.png)  -27px -13px no-repeat;'},
+          nude:  {img:'nude.png',  swatchStyle: 'background: url(images/bottomContrast/nude.png)  -27px -13px no-repeat;'},
+          red:   {img:'red.png',   swatchStyle: 'background: url(images/bottomContrast/red.png)   -27px -13px no-repeat;'},
+          white: {img:'white.png', swatchStyle: 'background: url(images/bottomContrast/white.png) -27px -13px no-repeat;'}
+        },
+        positioning: {
+          swatches:     { top: '376px', left: '324px' },
+          swatchOpener: { top: '366px', left: '55px', width: '260px', height: '258px' },
+          pieceImg:     { top: '366px', left: '55px', width: '260px', height: '258px' }
         }
       },
 
