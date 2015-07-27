@@ -3,6 +3,24 @@
 angular.module('leviApp')
   .controller('MainCtrl', function ($scope) {
     var data = {
+      base: {
+        name: 'base',
+        imgDir: 'images/base/',
+        options: {
+          black: {img:'align.png', swatchStyle: 'background: url(images/base/align.png) -143px -16px no-repeat;'},
+          neon:  {img:'neon.png',  swatchStyle: 'background: url(images/base/neon.png)  -143px -16px no-repeat;'},
+          nude:  {img:'nude.png',  swatchStyle: 'background: url(images/base/nude.png)  -143px -16px no-repeat;'},
+          red:   {img:'red.png',   swatchStyle: 'background: url(images/base/red.png)   -143px -16px no-repeat;'},
+          white: {img:'white.png', swatchStyle: 'background: url(images/base/white.png) -143px -16px no-repeat;'},
+          print: {img:'print.png', swatchStyle: 'background: url(images/base/print.png) -143px -16px no-repeat;'}
+        },
+        positioning: {
+          swatches:     { top: '62px', left: '324px' },
+          swatchOpener: { top: '61px', left: '58px',  width: '264px', height: '617px' },
+          pieceImg:     { top: '61px', left: '58px',  width: '264px', height: '617px' }
+        }
+      },
+
       shoulder: {
         name: 'shoulder',
         imgDir: 'images/shoulder/',
@@ -11,7 +29,8 @@ angular.module('leviApp')
           neon:  {img:'neon.png',  swatchStyle: 'background: url(images/shoulder/neon.png)  -143px -16px no-repeat;'},
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/shoulder/nude.png)  -143px -16px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/shoulder/red.png)   -143px -16px no-repeat;'},
-          white: {img:'white.png', swatchStyle: 'background: url(images/shoulder/white.png) -143px -16px no-repeat;'}
+          white: {img:'white.png', swatchStyle: 'background: url(images/shoulder/white.png) -143px -16px no-repeat;'},
+          white: {img:'print.png', swatchStyle: 'background: url(images/shoulder/print.png) -143px -16px no-repeat;'}
         },
         positioning: {
           swatches:     { top: '62px', left: '324px' },
