@@ -30,7 +30,7 @@ angular.module('leviApp')
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/shoulder/nude.png)  -143px -16px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/shoulder/red.png)   -143px -16px no-repeat;'},
           white: {img:'white.png', swatchStyle: 'background: url(images/shoulder/white.png) -143px -16px no-repeat;'},
-          white: {img:'print.png', swatchStyle: 'background: url(images/shoulder/print.png) -143px -16px no-repeat;'}
+          print: {img:'print.png', swatchStyle: 'background: url(images/shoulder/print.png) -143px -16px no-repeat;'}
         },
         positioning: {
           swatches:     { top: '62px', left: '324px' },
@@ -88,7 +88,7 @@ angular.module('leviApp')
           swatchOpener: { top: '290px', left: '89px', width: '78px',  height: '65px' },
           pieceImg:     { top: '96px',  left: '89px', width: '234px', height: '266px' }
         }
-      },
+      }
 
     };
     $scope.data = data;
