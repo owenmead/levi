@@ -1,17 +1,17 @@
 <div class="container">
-  <dpiece-selector
+  <piece-selector
     name="{{data.base.name}}"
     img-dir="{{data.base.imgDir}}"
     options="data.base.options"
   positioning="data.base.positioning"></piece-selector>
 
-  <dpiece-selector
+  <piece-selector
     name="{{data.shoulder.name}}"
     img-dir="{{data.shoulder.imgDir}}"
     options="data.shoulder.options"
   positioning="data.shoulder.positioning"></piece-selector>
 
-  <dpiece-selector
+  <piece-selector
     name="{{data.topContrast.name}}"
     img-dir="{{data.topContrast.imgDir}}"
     options="data.topContrast.options"
@@ -22,6 +22,13 @@
     img-dir="{{data.bottomContrast.imgDir}}"
     options="data.bottomContrast.options"
   positioning="data.bottomContrast.positioning"></piece-selector>
+
+  <piece-selector
+    name="{{data.piping.name}}"
+    img-dir="{{data.piping.imgDir}}"
+    options="data.piping.options"
+  positioning="data.piping.positioning"></piece-selector>
+
 
   <dress></dress>
 </div>

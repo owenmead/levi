@@ -73,6 +73,23 @@ angular.module('leviApp')
         }
       },
 
+      piping: {
+        name: 'piping',
+        imgDir: 'images/piping/',
+        options: {
+          black: {img:'black.png', swatchStyle: 'background: url(images/piping/black.png) 0px -296px no-repeat;'},
+          neon:  {img:'neon.png',  swatchStyle: 'background: url(images/piping/neon.png)  0px -296px no-repeat;'},
+          nude:  {img:'nude.png',  swatchStyle: 'background: url(images/piping/nude.png)  0px -296px no-repeat;'},
+          red:   {img:'red.png',   swatchStyle: 'background: url(images/piping/red.png)   0px -296px no-repeat;'},
+          white: {img:'white.png', swatchStyle: 'background: url(images/piping/white.png) 0px -296px no-repeat;'}
+        },
+        positioning: {
+          swatches:     { top: '217px', left: '318px' },
+          swatchOpener: { top: '290px', left: '89px', width: '78px',  height: '65px' },
+          pieceImg:     { top: '96px',  left: '89px', width: '234px', height: '266px' }
+        }
+      },
+
     };
     $scope.data = data;
   });
