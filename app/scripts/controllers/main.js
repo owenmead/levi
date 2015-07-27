@@ -7,38 +7,35 @@ angular.module('leviApp')
         name: 'shoulder',
         imgDir: 'images/shoulder/',
         options: {
-          green:  {img:'green.png',  swatchStyle: 'background: url(images/shoulder/green.png) -43px -16px no-repeat;'},
-          blue:   {img:'none.png',   swatchStyle: 'background: url(images/shoulder/blue.png) -43px -16px no-repeat;'},
-          purple: {img:'purple.png', swatchStyle: 'background: url(images/shoulder/purple.png) -43px -16px no-repeat;'},
-          red:    {img:'red.png',    swatchStyle: 'background: url(images/shoulder/red.png) -43px -16px no-repeat;'},
-          yellow: {img:'yellow.png', swatchStyle: 'background: url(images/shoulder/yellow.png) -43px -16px no-repeat;'}
+          black: {img:'black.png', swatchStyle: 'background: url(images/shoulder/black.png) -143px -16px no-repeat;'},
+          neon:  {img:'neon.png',  swatchStyle: 'background: url(images/shoulder/neon.png)  -143px -16px no-repeat;'},
+          nude:  {img:'nude.png',  swatchStyle: 'background: url(images/shoulder/nude.png)  -143px -16px no-repeat;'},
+          red:   {img:'red.png',   swatchStyle: 'background: url(images/shoulder/red.png)   -143px -16px no-repeat;'},
+          white: {img:'white.png', swatchStyle: 'background: url(images/shoulder/white.png) -143px -16px no-repeat;'}
         },
         positioning: {
-          swatches: {left: '350px', top: '52px' },
-          swatchOpener: { top: '50px', left: '215px', height: '200px', width: '133px' },
-          pieceImg: { top: '53px', left: '207px', width: '144px', height: '276px' }
+          swatches:     { top: '62px', left: '324px' },
+          swatchOpener: { top: '50px', left: '95px', width: '236px', height: '240px' },
+          pieceImg:     { top: '60px', left: '82px',  width: '240px', height: '251px' }
         }
       },
 
-
-      trim: {
-        name: 'trim',
-        imgDir: 'images/trim/',
+      topContrast: {
+        name: 'topContrast',
+        imgDir: 'images/topContrast/',
         options: {
-          blue: {img:'blue.png', swatchStyle: 'background: url(images/trim/blue.png) -13px -74px no-repeat;'},
-          fir:  {img:'fir.png',  swatchStyle: 'background: url(images/trim/fir.png) -13px -74px no-repeat;'},
-          grey: {img:'grey.png', swatchStyle: 'background: url(images/trim/grey.png) -13px -74px no-repeat;'}
+          black: {img:'black.png', swatchStyle: 'background: url(images/topContrast/black.png) -14px -46px no-repeat;'},
+          neon:  {img:'neon.png',  swatchStyle: 'background: url(images/topContrast/neon.png)  -14px -46px no-repeat;'},
+          nude:  {img:'nude.png',  swatchStyle: 'background: url(images/topContrast/nude.png)  -14px -46px no-repeat;'},
+          red:   {img:'red.png',   swatchStyle: 'background: url(images/topContrast/red.png)   -14px -46px no-repeat;'},
+          white: {img:'white.png', swatchStyle: 'background: url(images/topContrast/white.png) -14px -46px no-repeat;'}
         },
         positioning: {
-          swatches: {left: '32px', top: '115px' },
-          swatchOpener: { top: '77px', left: '65px', height: '124px', width: '145px' },
-          pieceImg: { top: '74px', left: '71px', width: '152px', height: '131px' }
+          swatches:     { top: '146px', left: '324px' },
+          swatchOpener: { top: '146px', left: '82px', width: '168px', height: '112px' },
+          pieceImg:     { top: '146px', left: '82px', width: '189px', height: '112px' }
         }
-      }
-
-
-
-
+      },
 
     };
     $scope.data = data;
