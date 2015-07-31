@@ -24,7 +24,7 @@ angular.module('leviApp')
     };
 
     return {
-      templateUrl: 'scripts/directives/pieceSelector.html',
+      templateUrl: 'views/pieceSelector.html',
       restrict: 'E',
       scope: {
         imgDir: '@',
