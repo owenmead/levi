@@ -460,7 +460,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'filerev',
+    // 'filerev', // breaks the scripts
     'usemin',
     'htmlmin'
   ]);
