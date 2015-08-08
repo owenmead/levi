@@ -47,7 +47,8 @@ angular.module('leviApp')
           neon:  {img:'neon.png',  swatchStyle: 'background: url(images/topContrast/neon.png)  -14px -46px no-repeat;'},
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/topContrast/nude.png)  -14px -46px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/topContrast/red.png)   -14px -46px no-repeat;'},
-          white: {img:'white.png', swatchStyle: 'background: url(images/topContrast/white.png) -14px -46px no-repeat;'}
+          white: {img:'white.png', swatchStyle: 'background: url(images/topContrast/white.png) -14px -46px no-repeat;'},
+          print: {img:'print.png', swatchStyle: 'background: url(images/topContrast/print.png) -14px -46px no-repeat;'}
         },
         positioning: {
           swatches:     { top: '146px', left: '324px' },
@@ -64,7 +65,8 @@ angular.module('leviApp')
           neon:  {img:'neon.png',  swatchStyle: 'background: url(images/bottomContrast/neon.png)  -27px -13px no-repeat;'},
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/bottomContrast/nude.png)  -27px -13px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/bottomContrast/red.png)   -27px -13px no-repeat;'},
-          white: {img:'white.png', swatchStyle: 'background: url(images/bottomContrast/white.png) -27px -13px no-repeat;'}
+          white: {img:'white.png', swatchStyle: 'background: url(images/bottomContrast/white.png) -27px -13px no-repeat;'},
+          white: {img:'print.png', swatchStyle: 'background: url(images/bottomContrast/print.png) -27px -13px no-repeat;'}
         },
         positioning: {
           swatches:     { top: '376px', left: '324px' },
