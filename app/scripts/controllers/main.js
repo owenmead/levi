@@ -66,7 +66,7 @@ angular.module('leviApp')
           nude:  {img:'nude.png',  swatchStyle: 'background: url(images/bottomContrast/nude.png)  -27px -13px no-repeat;'},
           red:   {img:'red.png',   swatchStyle: 'background: url(images/bottomContrast/red.png)   -27px -13px no-repeat;'},
           white: {img:'white.png', swatchStyle: 'background: url(images/bottomContrast/white.png) -27px -13px no-repeat;'},
-          white: {img:'print.png', swatchStyle: 'background: url(images/bottomContrast/print.png) -27px -13px no-repeat;'}
+          print: {img:'print.png', swatchStyle: 'background: url(images/bottomContrast/print.png) -27px -13px no-repeat;'}
         },
         positioning: {
           swatches:     { top: '376px', left: '324px' },
