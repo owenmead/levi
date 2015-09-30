@@ -3,7 +3,7 @@
 angular.module('leviApp')
   .directive('pieceSelector', function () {
 
-    var controller = function($attrs, $scope) {
+    var controller = function($attrs, $scope, $rootScope) {
       this.name = $scope.name;
       this.imgDir = $scope.imgDir;
       this.options = $scope.options();
@@ -12,8 +12,11 @@ angular.module('leviApp')
 
       this.showSwatchs = false;
       this.selectOption(this.options[this.optionKeys[0]]);
+
+      this.$rootScope = $rootScope;
     };
     controller.prototype.openSwatch = function() {
+        this.$rootScope.$broadcast('openSwatch');
         this.showSwatchs = true;
     };
     controller.prototype.closeSwatchs = function() {

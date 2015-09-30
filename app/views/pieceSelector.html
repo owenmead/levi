@@ -9,7 +9,9 @@
 			ng-repeat="option in ctrl.options"
 			ng-click="ctrl.selectOption(option)" style="{{option.swatchStyle}}"></div>
 	</div>
-	<div class="swatchOpener" ng-style="ctrl.positioning.swatchOpener" ng-click="ctrl.openSwatch()"></div>
+	<div class="swatchOpener" ng-style="ctrl.positioning.swatchOpener" ng-click="ctrl.openSwatch()">
+		<click-prompt  left="150" top="50" timeout="5000"></click-prompt>
+	</div>
 	<div class="swatchCloser" ng-show="ctrl.showSwatchs" ng-click="ctrl.closeSwatchs()"></div>
 	<div class="pieceImg" ng-style="ctrl.positioning.pieceImg"></div>
 </div>

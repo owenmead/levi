@@ -97,8 +97,15 @@ div.container {
 
 .clickPrompt {
 	position: absolute;
-	z-index: 20;
-	border: 1px solid #F00;
+	z-index: 4;
+	opacity: 0;
+	transition: all 1s linear;
+}
+.clickPrompt.show {
+	opacity: 1;
+}
+.clickPrompt.show.pulse {
+	opacity: 0.5;
 }
 
 // Remove highlight on webkit

@@ -5,5 +5,5 @@ angular.module('leviApp')
   	return {
   		templateUrl: 'views/sidebar.html',
   		restrict: 'E'
-  	}
+  	};
   });
