@@ -95,6 +95,12 @@ div.container {
 	z-index: 2;
 }
 
+.clickPrompt {
+	position: absolute;
+	z-index: 20;
+	border: 1px solid #F00;
+}
+
 // Remove highlight on webkit
 input,
 textarea,
