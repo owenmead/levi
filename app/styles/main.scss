@@ -83,6 +83,22 @@ div.sidebar {
 		color: #666;
 		font-size: 0.66em;
 	}
+
+	form {
+		margin-top: 1em;
+		padding-bottom: 1em;
+
+		p {
+			margin-top: 3px;
+		}
+
+		input {
+			font-size: 14px;
+		}
+		input[type="submit"] {
+			padding: 20px;
+		}
+	}
 }
 
 div.container {
