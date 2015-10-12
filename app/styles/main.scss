@@ -9,6 +9,14 @@ body {
 	div.sidebar {
 		top: 0;
 		width: 200px;
+
+		h2 {
+			margin-bottom: 2em;
+		}
+
+		form.emailForm {
+			margin-top: 3em;
+		}
 	}
 }
 @media (max-width: 549px) {
@@ -24,7 +32,16 @@ body {
 			margin: 0px;
 			padding-top: 0.5em;
 		}
+		form.emailForm {
+			margin: 0.33em 0 0;
+			padding: 0;
+		}
+		p {
+			margin: 0;
+		}
 
+		padding: 0;
+		margin: 0;
 		left: 0;
 	}
 }
@@ -34,6 +51,8 @@ div.sidebar {
 	bottom: 0;
 	right: 0;
 	z-index: 50;
+
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 
 
 	font-family: "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
@@ -48,7 +67,6 @@ div.sidebar {
 	}
 
 	button {
-		margin-top: 1em;
 		box-shadow:inset 0px 1px 0px 0px #ffffff;
 		background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 		background-color:#ffffff;
